@@ -1,0 +1,35 @@
+.wrapper{
+background-color: steelblue;
+    color: white;
+    padding: 10px;
+    width: 50em;
+    margin: auto;
+        
+}
+body{
+    align-content: center;
+    min-width: 100%;
+}
+
+#list{
+    background-color: steelblue;
+}
+
+li button{
+   float: right;
+}
+li{
+    width: 100%;
+}
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 97%;
+}
+#sortable li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  font-size: 1.4em;
+  height: 18px;
+}
