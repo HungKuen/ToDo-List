@@ -28,10 +28,8 @@ function addItem(text) {
   let li = document.createElement("li");
   li.setAttribute("class", "ui-state-default");
   let iconSpan =  document.createElement("span");
-  iconSpan.setAttribute("class","ui-icon ui-icon-arrowthick-2-n-s");
   let textSpan = document.createElement("span");
   textSpan.appendChild(newTextNode);
-  li.appendChild(iconSpan);
   li.appendChild(textSpan);
   li.appendChild(btn);
   li.appendChild(btnChange);
@@ -41,7 +39,7 @@ function addItem(text) {
 function changeFromList(event) {
   let oldValue = event.target.parentElement.firstChild.innerText;
   let newValue = prompt("Change this to do", oldValue);
-  if (input == null || input == "") {
+  if (newValue == null || newValue == "") {
     newValue = prompt("Try the delete button instead", oldValue);
   } else {
     event.target.parentElement.firstChild.innerText = newValue;
